@@ -7,10 +7,10 @@ CHIP A5Q2<201878756> {
     Not(in=O, out=NotO);
     Not(in=B, out=NotB);
     
-    And(a=NotO, b=NotB, out=A1);
+    And(a=NotO, b=NotB, out=notAandnotB);
     
-    Or(a=NotO, b=NotB, out=A2);
-    Or(a=A1, b=A2, out=A3);
+    Or(a=NotO, b=NotB, out=notOornotB);
+    Or(a=notAandnotB, b=notOornotB, out=A3);
     
     And(a=A3, b=P, out=W);
 
