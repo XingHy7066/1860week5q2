@@ -1,8 +1,7 @@
 CHIP A5Q2<201878756> {
-IN <O>, <B>, <P>;
-OUT <W>;
+    IN O, B, P;
+    OUT W;
 
-    PARTS:
 
     PARTS:
     Not(in=O, out=NotO);
